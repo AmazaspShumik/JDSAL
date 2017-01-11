@@ -1,7 +1,18 @@
 package graphs;
 
-/**
- * Created by amazaspshaumyan on 1/9/17.
- */
-public class SearchGraph {
+
+public interface SearchGraph<T> {
+
+    /**
+     * Checks whether vertex v was connected to s
+     * @return true if vertex v is marked, false otherwise
+     */
+    boolean marked( T v);
+
+    /**
+     * Number of vertices connected to s
+     * @return number of vertices connected to s
+     */
+    int count();
+
 }
